@@ -1,0 +1,21 @@
+{
+  "name": "phoenix_live_view_singleton",
+  "version": "0.3.0",
+  "description": "The Phoenix LiveView JavaScript singleton client. Useful for adding hooks dynamically.",
+  "license": "MIT",
+  "main": "./index.js",
+  "author": "Reio Piller <reio@coingaming.io>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coingaming/phoenix_live_view_singleton.git"
+  },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "package.json",
+    "assets/index.js"
+  ],
+  "dependencies": {
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+  }
+}
