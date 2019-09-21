@@ -13,6 +13,9 @@
     "package.json",
     "index.js"
   ],
+  "dependencies": {
+    "phoenix_live_view": "file:../../phoenix_live_view"
+  },
   "devDependencies": {
     "phoenix_live_view": "file:../deps/phoenix_live_view"
   }
