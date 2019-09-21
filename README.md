@@ -14,9 +14,21 @@ def deps do
 end
 ```
 
+Add `phoenix_live_view_singleton` to your list of dependencies in `assets/package.json`:
+```json
+{
+  ..
+  "dependencies": {
+    "phoenix_live_view_singleton": "file:../deps/phoenix_live_view_singleton/assets",
+    ..
+  }
+  ..
+}
+```
+
 ## Usage
 
-Add hook dynamically
+Add some hook
 ```javascript
 // file foo.js
 
@@ -27,7 +39,7 @@ liveView.hooks.SomeHook = {
 }
 ```
 
-Add more hooks
+Add more hooks in other file
 ```javascript
 // file bar.js
 
@@ -36,9 +48,13 @@ import liveSocket from "phoenix_live_view_singleton"
 liveView.hooks.OtherHook = {
   ..
 }
+
+liveView.hooks.AndMore = {
+  ..
+}
 ```
 
-Connect in third file
+Connect somewhere
 ```javascript
 // file buz.js
 
@@ -49,6 +65,7 @@ liveSocket.connect()
 console.log(liveSocket.hooks)
 // {
 //   SomeHook: {..},
-//   OtherHook: {..}
+//   OtherHook: {..},
+//   AndMore: {..}
 // }
 ```
