@@ -13,7 +13,7 @@
     "package.json",
     "index.js"
   ],
-  "dependencies": {
+  "optionalDependencies": {
     "phoenix_live_view": "file:../../phoenix_live_view"
   },
   "devDependencies": {
