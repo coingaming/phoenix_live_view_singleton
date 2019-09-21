@@ -11,6 +11,7 @@
   },
   "files": [
     "package.json",
+    "README.md",
     "index.js"
   ],
   "dependencies": {
