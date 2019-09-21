@@ -10,12 +10,10 @@
     "url": "git://github.com/coingaming/phoenix_live_view_singleton.git"
   },
   "files": [
-    "README.md",
-    "LICENSE.md",
     "package.json",
-    "assets/index.js"
+    "index.js"
   ],
-  "dependencies": {
+  "devDependencies": {
     "phoenix_live_view": "file:../deps/phoenix_live_view"
   }
 }
