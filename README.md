@@ -1,6 +1,6 @@
 # PhoenixLiveViewSingleton
 
-The Phoenix LiveView JavaScript singleton client. Useful for adding hooks dynamically.
+The Phoenix LiveView JavaScript singleton client. Useful for adding hooks after init.
 
 ## Installation
 
