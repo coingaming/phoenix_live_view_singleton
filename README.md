@@ -1,6 +1,6 @@
 # PhoenixLiveViewSingleton
 
-The Phoenix LiveView JavaScript singleton client. Useful for adding hooks dynamically.
+The Phoenix LiveView JavaScript singleton client. Useful for adding hooks after init.
 
 ## Installation
 
@@ -17,12 +17,9 @@ end
 Add `phoenix_live_view_singleton` to your list of dependencies in `assets/package.json`:
 ```json
 {
-  ..
   "dependencies": {
-    "phoenix_live_view_singleton": "file:../deps/phoenix_live_view_singleton/assets",
-    ..
+    "phoenix_live_view_singleton": "file:../deps/phoenix_live_view_singleton/assets"
   }
-  ..
 }
 ```
 
