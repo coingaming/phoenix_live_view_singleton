@@ -18,7 +18,7 @@ Add `phoenix_live_view_singleton` to your list of dependencies in `assets/packag
 ```json
 {
   "dependencies": {
-    "phoenix_live_view_singleton": "file:../deps/phoenix_live_view_singleton/assets"
+    "phoenix_live_view_singleton": "^0.3.0"
   }
 }
 ```
