@@ -14,7 +14,7 @@ Add some hook
 ```javascript
 // file foo.js
 
-import liveSocket from "phoenix_live_view_singleton"
+import liveView from "phoenix_live_view_singleton"
 
 liveView.hooks.SomeHook = {
   ..
@@ -25,7 +25,7 @@ Add more hooks in other file
 ```javascript
 // file bar.js
 
-import liveSocket from "phoenix_live_view_singleton"
+import liveView from "phoenix_live_view_singleton"
 
 liveView.hooks.OtherHook = {
   ..
@@ -40,11 +40,11 @@ Connect somewhere
 ```javascript
 // file buz.js
 
-import liveSocket from "phoenix_live_view_singleton"
+import liveView from "phoenix_live_view_singleton"
 
-liveSocket.connect()
+liveView.connect()
 
-console.log(liveSocket.hooks)
+console.log(liveView.hooks)
 // {
 //   SomeHook: {..},
 //   OtherHook: {..},
