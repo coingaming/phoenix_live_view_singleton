@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "phoenix": "^1.4.10",
-    "phoenix_live_view": "phoenixframework/phoenix_live_view"
+    "phoenix_live_view": "hypno2000/phoenix_live_view"
   }
 }
