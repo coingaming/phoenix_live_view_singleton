@@ -1,7 +1,7 @@
 import {Socket} from "phoenix"
 import LiveSocket from "phoenix_live_view"
 
-window.phoenixLiveView = window.phoenixLiveView || new LiveSocket("/live", Socket, {
+window.phoenixLiveView = window.phoenixLiveView || new LiveSocket("/live", Socket, {hooks: {
   Some: {
     mounted: () => {
       console.log("MOUNTED")
@@ -10,6 +10,6 @@ window.phoenixLiveView = window.phoenixLiveView || new LiveSocket("/live", Socke
       console.log("UPDATED")
     }
   }
-})
+}})
 
 export default window.phoenixLiveView
