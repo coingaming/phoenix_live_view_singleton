@@ -8,6 +8,9 @@ window.phoenixLiveView = window.phoenixLiveView || new LiveSocket("/live", Socke
     },
     updated: () => {
       console.log("UPDATED")
+    },
+    destroyed: () => {
+      console.log("DESTROYED")
     }
   }
 }})
