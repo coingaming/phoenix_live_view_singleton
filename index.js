@@ -1,18 +1,12 @@
-import {Socket} from "phoenix"
-import LiveSocket from "phoenix_live_view"
+import {Socket} from "phoenix";
+import LiveSocket from "phoenix_live_view";
 
-window.phoenixLiveView = window.phoenixLiveView || new LiveSocket("/live", Socket, {hooks: {
-  Some: {
-    mounted: () => {
-      console.log("MOUNTED")
-    },
-    updated: () => {
-      console.log("UPDATED")
-    },
-    destroyed: () => {
-      console.log("DESTROYED")
-    }
-  }
-}})
+function createLiveSocket() {
+  const csrfToken = document.querySelector("meta[name='csrf-token']");
+  const options = csrfToken ? {params: {_csrf_token: csrfToken.getAttribute("content")}} : {};
+  return new LiveSocket("/live", Socket, options);
+}
 
-export default window.phoenixLiveView
+window.phoenixLiveView = window.phoenixLiveView || createLiveSocket();
+
+export default window.phoenixLiveView;
