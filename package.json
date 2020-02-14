@@ -14,7 +14,7 @@
     "README.md",
     "index.js"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "phoenix": "^1.4.10",
     "phoenix_live_view": "github:coingaming/phoenix_live_view"
   }
