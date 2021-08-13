@@ -1,6 +1,6 @@
 {
   "name": "phoenix_live_view_singleton",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "The Phoenix LiveView JavaScript singleton client. Useful for adding hooks dynamically.",
   "license": "MIT",
   "main": "./index.js",
